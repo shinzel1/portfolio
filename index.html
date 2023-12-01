@@ -53,6 +53,11 @@ FACEBOOK: https://www.facebook.com/themefisher
   
   <!--Favicon-->
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <script>
+        // Remove .html extension from the URL
+        const pathWithoutExtension = window.location.pathname.replace(/\.html$/, '');
+        window.history.replaceState({}, '', pathWithoutExtension);
+    </script>
 
 </head>
 <body><!-- set class="dark" on body tag for DARK-THEME -->
